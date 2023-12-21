@@ -169,7 +169,7 @@ module.exports = (eleventyConfig, configOptions = {}) => {
 
       return `${options.noStyles ? "" : styleSheet}${getYears(postMap.years)
         .map((year) => {
-          const linkedYear = `<a href='/${year}>${year}</a>`;
+          const linkedYear = `<a href='/${year}'>${year}</a>`;
           const linkedMons = `                    <a href="/${year}/01">Jan</a>
           <a href="/${year}/02">Feb</a>
           <a href="/${year}/03">Mar</a>
